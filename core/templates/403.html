@@ -1,0 +1,17 @@
+{% load staticfiles %}<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>{{ title|default:"Главная" }}</title>
+        {#    META    #}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {#    END META    #}
+        {#    CSS    #}
+        <link href="{% static "css/base.css" %}" rel="stylesheet">
+        {% block styles %}{% endblock %}
+        {#    END CSS    #}
+    </head>
+    <body>
+        Привет! Тут пока ничего нет! Но ты можешь это исправить:)
+    </body>
+</html>
