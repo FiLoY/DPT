@@ -26,17 +26,6 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 CSRF_COOKIE_SECURE = True
 
 
-# Database
-# https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/#databases
-# example for postgresql db on localhost
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'db_name',
-#         'USER': 'db_user',
-#         'PASSWORD': 'db_user_password',
-#         'HOST': '127.0.0.1',
-#         'PORT': '5454',
-#     }
 # -------------------------------------------------------------- #
 # DATABASES                                                      #
 # -------------------------------------------------------------- #
