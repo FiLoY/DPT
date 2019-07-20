@@ -9,7 +9,6 @@
         {#    CSS    #}
         <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
         <link href="{% static 'css/base.css' %}" rel="stylesheet">
-
         {% block styles %}{% endblock %}
         {#    END CSS    #}
     </head>
@@ -26,8 +25,9 @@
             </div>
         </header>
         <main role="main" class="container">
-
+            {% block content %}
             <p>ПУСТОТА</p>
+            {% endblock %}
         </main>
         <footer class="footer">
             <div class="container">
@@ -37,6 +37,6 @@
         <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
         <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
         <script src="{% static 'js/base.js' %}"></script>
-
+        {% block scripts %}{% endblock %}
     </body>
 </html>
