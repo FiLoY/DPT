@@ -1,17 +1,20 @@
-{% load staticfiles %}<!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <title>{{ title|default:"Главная" }}</title>
-        {#    META    #}
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        {#    END META    #}
-        {#    CSS    #}
-        <link href="{% static "css/base.css" %}" rel="stylesheet">
-        {% block styles %}{% endblock %}
-        {#    END CSS    #}
-    </head>
-    <body>
-        Привет! Тут пока ничего нет! Но ты можешь это исправить:)
-    </body>
-</html>
+{% extends 'base.html' %}
+{% block styles %}
+    {% load staticfiles %}
+    <link href="{% static 'css/errors.css' %}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+    <div id="notfound">
+        <div class="notfound">
+            <div>
+                <div class="notfound-404">
+                    <h1>!</h1>
+                </div>
+                <h2>Ошибка<br>500</h2>
+            </div>
+            <p>Внутренняя ошибка сервера.
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}
